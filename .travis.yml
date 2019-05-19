@@ -7,3 +7,10 @@ matrix:
   allow_failures:
     - rust: nightly
   fast_finish: true
+deploy:
+  provider: cargo
+  on:
+    tags: true
+    branch: master
+  token:
+    secure: iIcvVx33GgyqFOYAK9auVxiBOWzSL850CgX84GvS2+jBqyZ4Rz9kK27ONvsfy2DmJHpWp79EYBwTXsLUpcioxcVq9Vv38BD0FlXMRDc9eTb2FLdcUh/qbMhdCyfVD2l1qrBrRq3Tim0K4hHUJoWEA8V6daLWwhpSGI083h8hWSZ6HvMxvrGgXFeSLFhRQkNRFlZenJD70yo4w6tf7iIuB+A8ziTKZpxyhdwqWfTysnsANCOl27wANmQIwBfVZ/C03JnJxTmWPBskVoIE8trVHeJMLJXKhK+f3HyPbIkOCNntbNwPJkZjhuKbk23zpFQA0YqoKhbmXCWeZMDXUWH6xQNR+vi/vCvAw7RZNQioz8H51lLqenF3DfgmB5hQljLpDvlEEM8EJqMAqJTKNGod4dJ6VTnc/QqGw6iFe0sq09WlvRYv8O3jXElU1Y8tkT9mh49x06Awhqw/KnzJb4impLvhC8nulLMrulNTKshzwY32G6PNc3rn6FD8++IsaT2WtPUPvM0jrlNtRetqF2Yzht1f5Cv7WBLylhvcYZARLTQ2+2ucrxUluQdryavQdO51CwZg7M4zdamAGbg9POHfBDABt3JmVgzN70gy2MUP/5KNdFSr1XRhk5JAEmsQgT89Qq39k9RwiPNYyORG93qNpLW1H0i4v8XjbXzFXfhlelk=
